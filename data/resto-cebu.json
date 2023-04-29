@@ -79,7 +79,7 @@
       "type": "Feature",
       "properties": {
         "name": "Sample 6 Restaurant",
-        "id": "5",
+        "id": "6",
         "type": "Fine Dining",
         "specialty": "Sample specialty 3", 
         "revenue": 1
@@ -93,7 +93,7 @@
       "type": "Feature",
       "properties": {
         "name": "Sample 7 Restaurant",
-        "id": "5",
+        "id": "7",
         "type": "Bistro",
         "specialty": "Sample specialty 3", 
         "revenue": 1
