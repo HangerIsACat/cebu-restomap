@@ -11,7 +11,9 @@ function initMap() {
   });
   
   // Load the stores GeoJSON onto the map.
-  map.data.loadGeoJson("data/resto-cebu.json", {idPropertyName: "id"});
+  map.data.loadGeoJson(
+    "https://raw.githubusercontent.com/HangerIsACat/cebu-restomap/main/data/resto-cebu.json", 
+    {idPropertyName: "id"});
   
   const infoWindow = new google.maps.InfoWindow();
 
