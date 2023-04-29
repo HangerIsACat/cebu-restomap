@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.87512, 10.31793]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Sample 1 Restaurant",
+        "id": "1",
+        "type": "fastfood",
+        "specialty": "Sample specialty 1", 
+        "revenue": 1
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.90689, 10.32523]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Sample 2 Restaurant",
+        "id": "2",
+        "type": "fastfood",
+        "specialty": "Sample specialty 2", 
+        "revenue": 1
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.88861, 10.33612]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Sample 3 Restaurant",
+        "id": "3",
+        "type": "cafe",
+        "specialty": "Sample specialty 3", 
+        "revenue": 1
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.79969, 10.25184]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Sample 4 Restaurant",
+        "id": "4",
+        "type": "Pizzeria",
+        "specialty": "Sample specialty 2", 
+        "revenue": 1
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.83350, 10.24001]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Sample 5 Restaurant",
+        "id": "5",
+        "type": "Fine Dining",
+        "specialty": "Sample specialty 1", 
+        "revenue": 1
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.91024, 10.38999]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Sample 6 Restaurant",
+        "id": "5",
+        "type": "Fine Dining",
+        "specialty": "Sample specialty 3", 
+        "revenue": 1
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.914356, 10.411090]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Sample 7 Restaurant",
+        "id": "5",
+        "type": "Bistro",
+        "specialty": "Sample specialty 3", 
+        "revenue": 1
+      }
+    }
+  ]
+}
