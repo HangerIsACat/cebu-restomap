@@ -4,7 +4,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [123.87512, 10.31793]
+        "coordinates": [123.89607, 10.31720]
       },
       "type": "Feature",
       "properties": {
@@ -12,7 +12,8 @@
         "id": "1",
         "type": "fastfood",
         "specialty": "Sample specialty 1", 
-        "revenue": 1
+        "revenue": 1, 
+        "visitorCount": 1
       }
     }, 
     {
@@ -26,13 +27,14 @@
         "id": "2",
         "type": "fastfood",
         "specialty": "Sample specialty 2", 
-        "revenue": 1
+        "revenue": 1, 
+        "visitorCount": 1
       }
     }, 
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [123.88861, 10.33612]
+        "coordinates": [123.88817, 10.325907]
       },
       "type": "Feature",
       "properties": {
@@ -40,13 +42,14 @@
         "id": "3",
         "type": "cafe",
         "specialty": "Sample specialty 3", 
-        "revenue": 1
+        "revenue": 1, 
+        "visitorCount": 1
       }
     }, 
     {
       "geometry": {
-        "type": "Point",
-        "coordinates": [123.79969, 10.25184]
+        "type": "Point", 
+        "coordinates": [123.891439, 10.309942]
       },
       "type": "Feature",
       "properties": {
@@ -54,13 +57,14 @@
         "id": "4",
         "type": "Pizzeria",
         "specialty": "Sample specialty 2", 
-        "revenue": 1
+        "revenue": 1, 
+        "visitorCount": 1
       }
     }, 
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [123.83350, 10.24001]
+        "coordinates": [123.90994, 10.32105]
       },
       "type": "Feature",
       "properties": {
@@ -68,13 +72,14 @@
         "id": "5",
         "type": "Fine Dining",
         "specialty": "Sample specialty 1", 
-        "revenue": 1
+        "revenue": 1, 
+        "visitorCount": 1
       }
     }, 
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [123.91024, 10.38999]
+        "coordinates": [123.89625, 10.33215]
       },
       "type": "Feature",
       "properties": {
@@ -82,13 +87,14 @@
         "id": "6",
         "type": "Fine Dining",
         "specialty": "Sample specialty 3", 
-        "revenue": 1
+        "revenue": 1, 
+        "visitorCount": 1
       }
     }, 
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [123.914356, 10.411090]
+        "coordinates": [123.89423, 10.31239]
       },
       "type": "Feature",
       "properties": {
@@ -96,7 +102,8 @@
         "id": "7",
         "type": "Bistro",
         "specialty": "Sample specialty 3", 
-        "revenue": 1
+        "revenue": 1, 
+        "visitorCount": 1
       }
     }
   ]
