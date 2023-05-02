@@ -4,7 +4,7 @@ class Helper {
   // Get input elements
   static get searchRestoInputEl() {
     return {
-      // type: document.getElementById("type"), 
+      type: document.getElementById("type"), 
       from: document.getElementById("from"), 
       to: document.getElementById("toResto"), 
       mode: document.getElementById("mode")
@@ -21,7 +21,7 @@ class Helper {
   }
   
   // GeoJSON load callback; used for setting options of the select element To
-  static initRestaurants(data) {
+  static initRestaurants(data) {  
     let restoTypes = new Set();
     
     data.forEach((feature) => {
@@ -31,6 +31,8 @@ class Helper {
     
       let optionEl = document.createElement("option");
       optionEl.innerHTML = feature.h.name;
+      
+      optionEl.setAttribute("type", feature.h.type);
       
       // Set restaurant coordinates as option value
       let restoCoords = feature.g.get();
@@ -46,7 +48,7 @@ class Helper {
       optionEl.innerHTML = value;
       optionEl.value = value;
       
-      // Helper.searchRestoInputEl.type.appendChild(optionEl);
+      Helper.searchRestoInputEl.type.appendChild(optionEl);
     });
   }
   

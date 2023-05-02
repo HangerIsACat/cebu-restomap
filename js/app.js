@@ -8,18 +8,12 @@ function initApp(map) {
   // Intantiate objects needed for rendering restaurant info window
   const infoWindow = new google.maps.InfoWindow();
   
-  // Get input elements
-  const fromEl = document.getElementById("from");
-  const toEl = document.getElementById("toResto");
-  const travelModeEl = document.getElementById("mode");
-  
   // Set map to directions renderer
   dirRenderer.setMap(map);
 
   // Show the information for a restaurant when its marker is clicked.
   map.data.addListener("click", (event) => {
     let infoContainer = Helper.restoInfoContainer(event);
-    
     
     infoWindow.setContent(infoContainer.contentEl);
     infoWindow.setPosition(infoContainer.position);
@@ -33,7 +27,9 @@ function initApp(map) {
   
   // Set autocomplete on from input element. 
   const autocompleteOptions = { componentRestrictions: {country: "ph"} };
-  autocomplete = new google.maps.places.Autocomplete(fromEl, autocompleteOptions);
+  autocomplete = new google.maps.places.Autocomplete(
+    Helper.searchRestoInputEl.from, 
+    autocompleteOptions);
   
   // Set the origin marker point when the user selects an address. 
   const originMarker = new google.maps.Marker({map: map});
@@ -67,7 +63,7 @@ function initApp(map) {
   });  
   
   // Re-calculate distance everytime a restaurant is selected
-  toEl.addEventListener("change", () => {    
+  Helper.searchRestoInputEl.to.addEventListener("change", () => {    
     Helper.locationValues.to = Helper.searchRestoInputEl.to.value;
     Helper.calculateDistance(
       dirService, 
@@ -76,12 +72,52 @@ function initApp(map) {
   }); 
   
   // Re-calculate distance everytime a tranvel mode is selected  
-  travelModeEl.addEventListener("change", () => {
+  Helper.searchRestoInputEl.mode.addEventListener("change", () => {
     Helper.locationValues.mode = Helper.searchRestoInputEl.mode.value;
     Helper.calculateDistance(
       dirService, 
       dirRenderer, 
       Helper.locationValues);
+  });
+  
+  
+  Helper.searchRestoInputEl.type.addEventListener("change", () => {
+    
+    let selectedRestoType = Helper.searchRestoInputEl.type.value;
+    let toOptions = Helper.searchRestoInputEl.to.children;
+    
+    if (selectedRestoType === "all") {
+      for (let i = 0; i < toOptions.length; i++) {
+        toOptions[i].style.display = "block";
+      }
+    
+      map.data.setStyle((feature) => {
+        
+        return { visible: true }
+        
+      });
+      
+      return;
+    }
+    
+    for (let i = 0; i < toOptions.length; i++) {
+    
+      if (toOptions[i].getAttribute("type") !== selectedRestoType) {
+        toOptions[i].style.display = "none";
+      } else {
+        toOptions[i].style.display = "block";
+      }
+      
+    }
+    
+    map.data.setStyle((feature) => {
+      
+      let restoType = selectedRestoType;
+      if (restoType !== feature.h.type) {
+        return { visible: false }
+      }
+      
+    });
   });
   
 }
