@@ -14,7 +14,15 @@
 
   <!--The div that contains origin place-->
   <div id="searchRestoPanel" class="floating-panel">
-  
+    <!--
+    <div>
+      <label for="type">Restaurant Type</label>
+      <select id="type" placeholder="Select a restaurant type">
+        <option value="all" selected>All</option>
+      </select>
+    </div>
+    -->
+    
     <div>
       <label for="from">From</label>
       <input type="text" id="from" placeholder="Origin" />
@@ -30,8 +38,7 @@
       <select id="mode" placeholder="Select a mode">
         <option value="DRIVING" selected>Driving</option>
         <option value="WALKING">Walking</option>
-        <option value="CYCLING">Cycling</option>
-        <option value="BUS">Bus Riding</option>
+        <option value="TRANSIT">Transit</option>
       </select>
     </div>
   
@@ -45,6 +52,8 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBte69eYal_spmFAdVtkgxtv58da7sjbA4&libraries=places&callback=initMap"
   ></script>
   
+  <script src="js/messages.js"></script>
+  <script src="js/helper.js"></script>
   <script src="js/map.js"></script>
   <script src="js/app.js"></script>
 </body>
