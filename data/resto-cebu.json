@@ -10,7 +10,7 @@
       "properties": {
         "name": "Sample 1 Restaurant",
         "id": "1",
-        "type": "fastfood",
+        "type": "Fastfood",
         "specialty": "Sample specialty 1", 
         "revenue": 1, 
         "visitorCount": 1
@@ -25,7 +25,7 @@
       "properties": {
         "name": "Sample 2 Restaurant",
         "id": "2",
-        "type": "fastfood",
+        "type": "Fastfood",
         "specialty": "Sample specialty 2", 
         "revenue": 1, 
         "visitorCount": 1
@@ -40,7 +40,7 @@
       "properties": {
         "name": "Sample 3 Restaurant",
         "id": "3",
-        "type": "cafe",
+        "type": "Cafe",
         "specialty": "Sample specialty 3", 
         "revenue": 1, 
         "visitorCount": 1
